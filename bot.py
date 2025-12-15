@@ -36,4 +36,5 @@ def unlock_group(message):
     bot.send_message(message.chat.id, "Group prossesing  (mention).")
 
 print("Bot is running...")
-bot.infinity_polling()
+bot.infinity_polling(run)
+                   
