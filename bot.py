@@ -2,7 +2,7 @@ import telebot
 from telebot.types import ChatPermissions
 from config import TOKEN = ("8182617462:AAEWSUfe2UVNwN6XWPzSEqxdmtp3Js_7XNE"), 7779433887
 
-bot = telebot.TeleBot ("8182617462:AAEWSUfe2UVNwN6XWPzSEqxdmtp3Js_7XNE")
+bot = telebot.TeleBot (BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -36,5 +36,5 @@ def unlock_group(message):
     bot.send_message(message.chat.id, "Group prossesing  (mention).")
 
 print("Bot is running...")
-bot.infinity_polling(run)
+bot.infinity_polling()
                    
