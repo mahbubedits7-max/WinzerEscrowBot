@@ -1,8 +1,8 @@
 import telebot
 from telebot.types import ChatPermissions
-from config import 8182617462:AAEWSUfe2UVNwN6XWPzSEqxdmtp3Js_7XNE, 7779433887
+from config import TOKEN = ("8182617462:AAEWSUfe2UVNwN6XWPzSEqxdmtp3Js_7XNE"), 7779433887
 
-bot = telebot.TeleBot(8182617462:AAEWSUfe2UVNwN6XWPzSEqxdmtp3Js_7XNE)
+bot = telebot.TeleBot ("8182617462:AAEWSUfe2UVNwN6XWPzSEqxdmtp3Js_7XNE")
 
 @bot.message_handler(commands=['start'])
 def start(message):
