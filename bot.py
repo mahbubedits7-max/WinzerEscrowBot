@@ -1,8 +1,8 @@
 import telebot
 from telebot.types import ChatPermissions
-from config import BOT_TOKEN, ADMIN_ID
+from config import 8182617462:AAEWSUfe2UVNwN6XWPzSEqxdmtp3Js_7XNE, 7779433887
 
-bot = telebot.TeleBot(BOT_TOKEN)
+bot = telebot.TeleBot(8182617462:AAEWSUfe2UVNwN6XWPzSEqxdmtp3Js_7XNE)
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -33,7 +33,7 @@ def get_seller(message):
 def unlock_group(message):
     if message.from_user.id != ADMIN_ID:
         return bot.reply_to(message, "You are not authorized.")
-    bot.send_message(message.chat.id, "Group unlocked (demo).")
+    bot.send_message(message.chat.id, "Group prossesing  (mention).")
 
 print("Bot is running...")
 bot.infinity_polling()
