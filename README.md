@@ -1,1 +1,1 @@
-WinzerEscrowBot
+https://t.me/escrowredirect
